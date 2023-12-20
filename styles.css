@@ -1,0 +1,93 @@
+body, html {
+  height: 70%;
+  margin: 20px;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+body main {
+  border: 2px solid black; 
+  width: 400px;
+  height: 400px;
+  background-color: #d3bdbd;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative; /* Add this line */
+  z-index: 1; /* Add this line */
+}
+
+header {
+  position: fixed;
+  top: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: transparent;
+  z-index: 1000;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header nav ul li {
+  margin: 0 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s;
+}
+header nav ul li a:hover{
+  background-color: greenyellow;
+  color: whitesmoke;
+}
+
+#navbar {
+  width: 416px;
+  background-color: #c2afaf;
+  border: 2px solid black; 
+}
+
+#food-menu {
+  height: 400px;
+  width: 400px; /* Set the height for scrollability */
+  overflow-y: auto;   /* Enable vertical scrolling */
+  position: relative; /* Add this line */
+  z-index: 0; /* Add this line */
+}
+
+#food-menu ul {
+  list-style: none; /* Remove default list styling */
+  padding: 0;
+}
+
+#food-menu li {
+  margin-bottom: 10px; /* Add margin between items */
+}
+
+#food-menu li div {
+  background-color: #d3bdbd; /* Set background color for the boxes */
+  border: 1px solid #4b4949; /* Add border to the boxes */
+  padding: 15px;
+  width: 350px; 
+}
+
+#food-menu div:hover {
+  background-color: greenyellow;
+  transform: scale(0.9);
+}
+
+#food-menu-title {
+  text-align: left;
+}
+header #navbar {
+  margin-bottom: 20px;
+}
